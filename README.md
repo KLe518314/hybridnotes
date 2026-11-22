@@ -171,5 +171,7 @@ src/
 
 - Entry cost so far: **$0** (npm packages + free tiers only; nothing registered,
   nothing submitted yet).
-- Gemini model name in `cloud.ts` is `gemini-2.5-flash`; adjust to whatever the
+- Gemini model name in `cloud.ts` is `gemini-3.5-flash-lite` (Gemini 2.5 Flash
+  was retired for new projects in Nov 2026; 3.5-flash-lite is its verified
+  replacement on the Gemini Developer API); adjust to whatever the
   AI Logic console lists for the project if it differs.

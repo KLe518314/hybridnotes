@@ -7,7 +7,7 @@
 //   const ai = getAI(app, { backend: new GoogleAIBackend() });
 //   const model = getGenerativeModel(ai, {
 //     mode: InferenceMode.PREFER_ON_DEVICE,               // HybridParams.mode
-//     inCloudParams: { model: 'gemini-2.5-flash' },       // HybridParams.inCloudParams
+//     inCloudParams: { model: 'gemini-3.5-flash-lite' }, // HybridParams.inCloudParams
 //   });
 //   const result = await model.generateContent(prompt);
 //   result.response.text();                               // string
@@ -31,7 +31,7 @@ import { firebaseConfig, isFirebaseConfigured } from '../firebase-config';
 
 export { isFirebaseConfigured as isCloudConfigured };
 
-const CLOUD_MODEL = 'gemini-2.5-flash';
+const CLOUD_MODEL = 'gemini-3.5-flash-lite';
 
 let cachedApp: FirebaseApp | null = null;
 let cachedModel: GenerativeModel | null = null;
